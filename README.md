@@ -74,7 +74,7 @@ pip3 install prettytable
 ## install:
 ``` bash
 git clone https://github.com/diasnull/check-host.git
-cd chec-host/
+cd check-host/
 ```
 
 ## run:
