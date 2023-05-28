@@ -87,7 +87,7 @@ cd check-host/
 
 ## run:
 ``` bash
-python3 check-host.py help
+python3 check-host.py -h
 ```
 
 
