@@ -28,6 +28,9 @@ def http_data_parser(result_data, data_frame_temp, id_key):
 
 
 def http_data_part(data_frame, id_key, index_count):
+	# trigger // api_data --> id_key_part()
+	if id_key == 0:
+		return datetime.datetime.now().strftime("%H:%M:%S") + " { error } inf: reached API limit, wait a minute."
 	result_data = result_data_part(id_key)
 	for nod_location in result_data:
 		if result_data[nod_location] == None:
@@ -47,6 +50,6 @@ def http_part(args):
 	# index_count = index // index_frame
 	index_count = 0
 	id_key = id_key_part(target, "http")
-	print("{ info } http started at:", datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
+	print("{ info } HTTP started at:", datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
 	print(http_data_part(data_frame, id_key, index_count))
-	print("{ info } http ended in:", datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
+	print("{ info } HTTP ended in:", datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"))

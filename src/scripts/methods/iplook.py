@@ -13,8 +13,7 @@ def iplook_data(target, data_frame):
 		# remove index // set index to ""
 		data_frame.index = [""] * len(data_frame)
 		return data_frame
-	elif iplook_req["status"] == "fail":
-		return datetime.datetime.now().strftime("%H:%M:%S") + " { error } inf: invalid target"
+	return datetime.datetime.now().strftime("%H:%M:%S") + " { error } inf: invalid target."
 
 
 def iplook_part(args):

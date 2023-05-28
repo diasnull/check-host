@@ -4,6 +4,9 @@ import requests
 
 def id_key_part(target, method):
 	id_key_req = json.loads(requests.get(f"https://check-host.net/check-{method}?host={target}", headers={"Accept": "application/json"}).text)
+	# trigger // reached API limit
+	if "request_id" not in id_key_req:
+		return 0
 	return id_key_req
 
 
