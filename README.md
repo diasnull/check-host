@@ -46,7 +46,7 @@ Check-Host is a utility for monitoring websites and checking the availability of
  | python3 check-host.py --tcp -t http://example.com
  | python3 check-host.py --tcp -t ssmtp://smtp.gmail.com
 
- tcp: testing UDP connection
+ udp: testing UDP connection
  usage:
  | python3 check-host.py --udp -t <target>:<port> <-- automatically port 80
  examples:
@@ -66,9 +66,10 @@ Check-Host is a utility for monitoring websites and checking the availability of
 
 ## methods:
 iplook: website location search, IP address<br>
-ping: checking the integrity and quality of connections<br>
-http: website availability and performance check<br>
-tcp: testing TCP connection of any port of an IP address, website<br>
+ping: testing the integrity and quality of connections<br>
+http: testing website availability and performance<br>
+tcp: testing TCP connection<br>
+udp: testing UDP connection<br>
 dns: website domain monitoring<br>
 
 ## requirements:
