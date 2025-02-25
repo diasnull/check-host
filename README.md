@@ -35,7 +35,7 @@ Check-Host is a utility for monitoring websites and checking the availability of
 ## methods:
 ip-lookup: retrieves information about an IP address, including geolocation and owner details;<br>
 whois: provides registration details for a domain name;<br>
-ping: tests the reachability of a host (layer4);<br>
+ping: tests the reachability of a host (layer3);<br>
 http: tests the reachability of a host (layer7);<br>
 tcp: tests arbitrary TCP port connectivity;<br>
 udp: tests arbitrary UDP port connectivity;<br>
