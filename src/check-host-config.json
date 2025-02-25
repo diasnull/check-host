@@ -1,0 +1,14 @@
+{
+	"check-host": {
+		"version": "2.0",
+		"method": {
+			"ip-lookup": "domain, ip",
+			"whois": "url, domain, ip",
+			"ping": "url, domain, ip",
+			"http": "url, domain, ip",
+			"tcp": "url, domain, ip",
+			"udp": "url, domain, ip",
+			"dns": "url, domain, ip"
+		}
+	}
+}
