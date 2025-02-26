@@ -42,16 +42,18 @@ udp: tests arbitrary UDP port connectivity;<br>
 dns: queries DNS records for a domain<br>
 
 
-## requirements:
-``` bash
-pip3 install -r requirements.txt
-```
-
 ## install:
 ``` bash
 git clone https://github.com/diasnull/check-host.git
 cd check-host/
 ```
+
+
+## requirements:
+``` bash
+pip3 install -r requirements.txt
+```
+
 
 ## run:
 ``` bash
